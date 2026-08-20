@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Avinash IT Admin Toolbox | Web Edition</title>
+  <meta name="description" content="Browser-based IT utilities by Avinash Kumar: DNS lookup, subnet calculator, password generator, SHA256 hashing, system info and more.">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>Avinash IT Admin Toolbox <span>Web Edition</span></h1>
+      <p>Daily IT utilities for administrators, cloud engineers and DevOps professionals</p>
+    </div>
+    <div class="badge">Python Desktop → Web</div>
+  </header>
+  <main class="app-shell">
+    <aside class="sidebar">
+      <h2>TOOLS</h2>
+      <button data-tool="system">System Information</button><button data-tool="network">Network / Browser Info</button><button data-tool="dns">DNS Lookup</button><button data-tool="reverse">Reverse DNS</button><button data-tool="subnet">IP / Subnet Calculator</button><button data-tool="website">Website Health Check</button><button data-tool="password">Password Generator</button><button data-tool="hash">SHA256 Text Hash</button><button data-tool="rdp">RDP Launcher</button><button data-tool="ssh">SSH Launcher</button><button data-tool="about">About Project</button>
+    </aside>
+    <section class="workspace">
+      <div class="toolbar"><button id="copyBtn">Copy Output</button><button id="saveBtn">Save Report</button><button id="clearBtn">Clear Output</button></div>
+      <div class="card form-card" id="formCard"><h3 id="toolTitle">System Information</h3><div id="toolForm"></div></div>
+      <div class="card output-card"><div class="output-head"><h3>OUTPUT</h3><span id="statusDot">● Ready</span></div><pre id="output">Select a tool from the left panel.\n\nWelcome to Avinash IT Admin Toolbox — Web Edition.</pre></div>
+    </section>
+  </main>
+  <footer>Built by <strong>Avinash Kumar</strong> · IT Infrastructure · Cloud · DevOps · Automation</footer>
+  <script src="app.js"></script>
+</body>
+</html>
